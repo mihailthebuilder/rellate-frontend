@@ -65,3 +65,10 @@ section.landing {
     column-gap: 7vw;
   }
 }
+
+@media (max-width: 1000px) {
+  section.landing {
+    font-size: 1.5rem;
+    column-gap: 7vw;
+  }
+}
