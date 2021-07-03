@@ -8,7 +8,7 @@ section.landing {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 
-  padding: clamp(2rem, 5vw, 5rem) 10vw;
+  padding: clamp(2rem, 5vw, 5rem) 15vw;
 
   .pitch-primary h1 {
     color: white;
@@ -17,7 +17,7 @@ section.landing {
     }
   }
 
-  column-gap: clamp(5rem, 8vw, 20rem);
+  column-gap: clamp(5rem, 10vw, 20rem);
 
   img {
     grid-column-start: 2;
