@@ -8,10 +8,13 @@ section.landing {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 
-  padding: 2rem 10vw;
+  padding: clamp(2rem, 5vw, 5rem) 10vw;
 
   .pitch-primary h1 {
     color: white;
+    .italic {
+      display: inline-block;
+    }
   }
 
   column-gap: clamp(5rem, 8vw, 20rem);
