@@ -7,27 +7,33 @@ section.landing {
 
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-auto-rows: fit-content(1em);
   column-gap: clamp(5rem, 10vw, 20rem);
+  align-items: center;
 
-  .pitch-primary {
-    h1 {
-      color: white;
-      .italic {
-        display: inline-block;
-      }
+  h1 {
+    color: white;
+    .italic {
+      display: inline-block;
     }
-    a {
-      text-decoration: none;
-      color: $lime;
-      font-weight: bold;
-      border: 4px solid $lime;
-      padding: 0.5em 1em;
-      border-radius: 10px;
-    }
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  a {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-decoration: none;
+    color: $lime;
+    font-weight: bold;
+    border: 4px solid $lime;
+    padding: 0.5em 1em;
+    border-radius: 10px;
   }
 
   .pitch-secondary {
+    grid-row-start: 3;
+    grid-row-end: 4;
     color: $nyanza;
     .italic {
       color: white;
@@ -39,9 +45,8 @@ section.landing {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
     max-height: 70vh;
     justify-self: end;
-    align-self: center;
   }
 }

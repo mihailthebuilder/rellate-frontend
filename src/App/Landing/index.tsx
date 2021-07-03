@@ -4,16 +4,14 @@ import "./index.scss";
 
 const Landing: React.FC = () => (
   <section className="landing">
-    <div className="pitch-primary">
-      <h1>
-        Tired of doomscrolling just to read posts from your favourite LinkedIn
-        personalities?{" "}
-        <span className="italic">
-          Enter <span className="underline">rellate</span>.
-        </span>
-      </h1>
-      <a href="#form">Get started</a>
-    </div>
+    <h1>
+      Tired of doomscrolling just to read posts from your favourite LinkedIn
+      personalities?{" "}
+      <span className="italic">
+        Enter <span className="underline">rellate</span>.
+      </span>
+    </h1>
+    <a href="#form">Get started</a>
 
     <div className="pitch-secondary">
       <p>
