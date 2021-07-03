@@ -5,10 +5,10 @@ section.landing {
   font-size: 2rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr;
 
-  padding: 4rem;
+  padding: 4rem 10rem;
 
   .pitch-primary h1 {
     color: white;
@@ -20,5 +20,7 @@ section.landing {
     grid-row-start: 1;
     grid-row-end: 3;
     max-height: 70vh;
+    justify-self: end;
+    align-self: center;
   }
 }
