@@ -8,11 +8,13 @@ section.landing {
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr;
 
-  padding: 4rem 10rem;
+  padding: 4rem 15rem;
 
   .pitch-primary h1 {
     color: white;
   }
+
+  column-gap: 10vw;
 
   img {
     grid-column-start: 2;
