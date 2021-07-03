@@ -6,16 +6,13 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "react"],
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-  ],
+  extends: ["airbnb-typescript", "prettier"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
     sourceType: "module",
+    project: "./tsconfig.json",
   },
 };
