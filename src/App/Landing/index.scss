@@ -6,15 +6,15 @@ section.landing {
 
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 
-  padding: 4rem 15rem;
+  padding: 2rem 10vw;
 
   .pitch-primary h1 {
     color: white;
   }
 
-  column-gap: 10vw;
+  column-gap: clamp(5rem, 8vw, 20rem);
 
   img {
     grid-column-start: 2;
