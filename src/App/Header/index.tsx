@@ -3,7 +3,7 @@ import "./index.scss";
 
 const Header: React.FC = () => (
   <header>
-    <div>rellate</div>
+    <div className="italic">rellate</div>
     <ul>
       <li>Get Started</li>
       <li>Contact</li>
