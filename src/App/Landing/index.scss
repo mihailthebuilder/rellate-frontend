@@ -4,7 +4,21 @@ section.landing {
   background: $green-main;
   font-size: 2rem;
 
-  h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 4rem;
+
+  .pitch-primary h1 {
     color: white;
+  }
+
+  img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-height: 70vh;
   }
 }
