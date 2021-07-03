@@ -3,12 +3,12 @@
 section.landing {
   background: $green;
   font-size: 2rem;
+  padding: clamp(2rem, 5vw, 5rem) 15vw;
 
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-
-  padding: clamp(2rem, 5vw, 5rem) 15vw;
+  column-gap: clamp(5rem, 10vw, 20rem);
 
   .pitch-primary {
     h1 {
@@ -27,7 +27,13 @@ section.landing {
     }
   }
 
-  column-gap: clamp(5rem, 10vw, 20rem);
+  .pitch-secondary {
+    color: $nyanza;
+    .italic {
+      color: white;
+      font-weight: bold;
+    }
+  }
 
   img {
     grid-column-start: 2;
