@@ -58,3 +58,10 @@ section.landing {
     padding: 3vw 10vw;
   }
 }
+
+@media (max-width: 1200px) {
+  section.landing {
+    font-size: 1.5rem;
+    column-gap: 7vw;
+  }
+}
