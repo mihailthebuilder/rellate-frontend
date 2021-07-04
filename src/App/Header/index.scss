@@ -22,9 +22,11 @@ header {
   ul {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 0;
+
     li {
       list-style: none;
-      padding: 0 1.5em;
+      height: 100%;
     }
     padding: 0;
   }
