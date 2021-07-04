@@ -32,9 +32,9 @@ section.landing {
     justify-self: start;
 
     &:hover {
-      background-color: #40a062;
+      background-color: $green-shamrock;
       color: white;
-      border-color: #235835;
+      border-color: $green-hunter;
     }
   }
 
