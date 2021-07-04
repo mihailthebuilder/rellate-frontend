@@ -10,7 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
 
-  * {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 }
