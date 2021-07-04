@@ -3,7 +3,7 @@
 section.landing {
   background: $green;
   font-size: 2rem;
-  padding: 3vw 15vw;
+  padding: 3vw 15vw 6vw 15vw;
 
   display: grid;
   grid-template-columns: auto auto;
@@ -55,7 +55,7 @@ section.landing {
 @media (max-width: 1700px) {
   section.landing {
     font-size: 1.8rem;
-    padding: 3vw 10vw;
+    padding: 3vw 10vw 6vw 10vw;
   }
 }
 
