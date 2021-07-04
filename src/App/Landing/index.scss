@@ -24,18 +24,22 @@ section.landing {
     grid-row-start: 2;
     grid-row-end: 3;
     text-decoration: none;
-    color: $lime;
+    color: $yellow;
     font-weight: bold;
-    border: 0.15em solid $lime;
+    border: 0.15em solid $yellow;
     padding: 0.5em 1em;
     border-radius: 0.3em;
     justify-self: start;
+
+    &:hover {
+      background: $yellow-pale;
+    }
   }
 
   .pitch-secondary {
     grid-row-start: 3;
     grid-row-end: 4;
-    color: $nyanza;
+    color: $yellow-pale;
     .italic {
       color: white;
       font-weight: bold;

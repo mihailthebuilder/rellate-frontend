@@ -35,6 +35,10 @@ header {
         padding: 0 2rem;
         text-decoration: none;
         color: white;
+
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }
