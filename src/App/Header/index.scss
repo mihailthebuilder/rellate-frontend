@@ -27,12 +27,12 @@ header {
     li {
       list-style: none;
       a {
-        height: 5rem;
+        height: 3em;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 2rem;
+        padding: 0 1.5em;
         text-decoration: none;
         color: white;
 
@@ -46,17 +46,18 @@ header {
 
 @media (max-width: 700px) {
   header {
+    font-size: 1rem;
     display: block;
     padding: 0;
 
     .logo {
-      padding-top: 0.5rem;
+      padding-top: 0.2em;
     }
 
     ul {
       grid-template-columns: 1fr 1fr;
       li a {
-        height: 3.5rem;
+        height: 2.5em;
         padding: 0;
       }
     }
