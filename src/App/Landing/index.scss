@@ -1,7 +1,7 @@
 @import "../../resources/variables.scss";
 
 section.landing {
-  background: $green;
+  background: $green-viridian;
   font-size: 2rem;
   padding: 3vw 15vw 6vw 15vw;
 
@@ -24,22 +24,24 @@ section.landing {
     grid-row-start: 2;
     grid-row-end: 3;
     text-decoration: none;
-    color: $yellow;
+    color: $lime-key;
     font-weight: bold;
-    border: 0.15em solid $yellow;
+    border: 0.15em solid $lime-key;
     padding: 0.5em 1em;
     border-radius: 0.3em;
     justify-self: start;
 
     &:hover {
-      background: $yellow-pale;
+      background-color: #40a062;
+      color: white;
+      border-color: #235835;
     }
   }
 
   .pitch-secondary {
     grid-row-start: 3;
     grid-row-end: 4;
-    color: $yellow-pale;
+    color: $lime-key;
     .italic {
       color: white;
       font-weight: bold;
