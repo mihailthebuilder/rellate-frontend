@@ -3,10 +3,14 @@ import "./index.scss";
 
 const Header: React.FC = () => (
   <header>
-    <div className="italic">rellate</div>
+    <div className="italic logo">rellate</div>
     <ul>
-      <li>Get Started</li>
-      <li>Contact</li>
+      <li>
+        <a href="#form">Get Started</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   </header>
 );
