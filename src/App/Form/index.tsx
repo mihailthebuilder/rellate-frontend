@@ -7,6 +7,7 @@ import preventEnterSubmission from "../../resources/helpers";
 
 const Form: FC = () => {
   const [email, setEmail] = useState("");
+  const [questionNumber, setQuestionNumber] = useState(1);
 
   return (
     <section id="form" className="form">
@@ -23,7 +24,22 @@ const Form: FC = () => {
             onKeyDown={(event) => preventEnterSubmission(event)}
           />
         </FormControl>
-        {email !== "" && <Button type="button">Next</Button>}
+        {questionNumber > 1 && (
+          <Button
+            type="button"
+            onClick={() => setQuestionNumber((prev) => prev - 1)}
+          >
+            Back
+          </Button>
+        )}
+        {email !== "" && questionNumber < 3 && (
+          <Button
+            type="button"
+            onClick={() => setQuestionNumber((prev) => prev + 1)}
+          >
+            Next
+          </Button>
+        )}
       </form>
     </section>
   );
