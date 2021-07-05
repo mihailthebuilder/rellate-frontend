@@ -51,7 +51,7 @@ function Form(): ReactElement {
             />
           ) : (
             questionNumber === 2 && (
-              <div>
+              <div className="influencer-answer-container">
                 {influencers.map((influencer) => (
                   <Input
                     placeholder={influencer}
