@@ -15,7 +15,10 @@ const Form: FC = () => {
       <form>
         <FormControl className="form-control">
           <InputLabel shrink className="input-label">
-            1/3 - Enter your email
+            <span className="question-num-indicator">
+              {questionNumber}/3 {">"}
+            </span>
+            Enter your email
           </InputLabel>
           <Input
             onChange={(event) => setEmail(event.target.value)}
