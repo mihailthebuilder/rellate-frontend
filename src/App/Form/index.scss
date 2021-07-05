@@ -49,6 +49,10 @@ section.form {
       border: 0.05em solid $yellow-pale;
       padding: 0.3em 1.5em;
       text-transform: capitalize;
+
+      &:hover {
+        background: $green-hunter;
+      }
     }
   }
 }
