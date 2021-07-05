@@ -3,6 +3,7 @@ import { FC, useState } from "react";
 import { FormControl, InputLabel, Input } from "@material-ui/core";
 
 import "./index.scss";
+import preventEnterSubmission from "../../resources/helpers";
 
 const Form: FC = () => {
   const [email, setEmail] = useState("");
@@ -20,6 +21,7 @@ const Form: FC = () => {
             onChange={(event) => setEmail(event.target.value)}
             required
             placeholder="name@example.com"
+            onKeyDown={(event) => preventEnterSubmission(event)}
           />
         </FormControl>
       </form>
