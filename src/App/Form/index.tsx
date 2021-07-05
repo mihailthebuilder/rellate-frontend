@@ -41,6 +41,12 @@ function Form(): ReactElement {
               {questionNumber}/3 {">"}
             </span>
             {questions[questionNumber - 1]}
+            {questionNumber === 2 && (
+              <FormHelperText>
+                You can leave the input field empty if you accidentally added
+                too many.
+              </FormHelperText>
+            )}
           </InputLabel>
           {questionNumber === 1 ? (
             <Input
