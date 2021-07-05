@@ -11,7 +11,6 @@ const Form: FC = () => {
   return (
     <section id="form" className="form">
       <h2>Set up your newsletter in less than a minute</h2>
-      <span>{email}</span>
       <form>
         <FormControl className="form-control">
           <InputLabel shrink className="input-label">
@@ -24,7 +23,7 @@ const Form: FC = () => {
             onKeyDown={(event) => preventEnterSubmission(event)}
           />
         </FormControl>
-        <Button type="button">Next</Button>
+        {email !== "" && <Button type="button">Next</Button>}
       </form>
     </section>
   );
