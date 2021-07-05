@@ -20,16 +20,17 @@ section.landing {
     grid-row-end: 2;
   }
 
-  a {
+  .get-started-button {
+    color: $lime-key;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    justify-self: start;
+
+    border: 0.15em solid $lime-key;
+
     grid-row-start: 2;
     grid-row-end: 3;
-    text-decoration: none;
-    color: $lime-key;
-    font-weight: bold;
-    border: 0.12em solid $lime-key;
-    padding: 0.5em 1em;
     border-radius: 0.3em;
-    justify-self: start;
 
     &:hover {
       background-color: $green-shamrock;
@@ -93,9 +94,8 @@ section.landing {
       margin-top: 0;
     }
 
-    a {
+    .get-started-button {
       width: 100%;
-      text-align: center;
     }
 
     img {

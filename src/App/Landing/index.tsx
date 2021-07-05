@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Button } from "@material-ui/core";
+
 import demoImage from "./product_demo.jpg";
 import "./index.scss";
 
@@ -11,7 +13,10 @@ const Landing: React.FC = () => (
         Enter <span className="underline">rellate</span>.
       </span>
     </h1>
-    <a href="#form">Get started</a>
+
+    <Button className="get-started-button" variant="outlined" href="#form">
+      Get started
+    </Button>
 
     <div className="pitch-secondary">
       <p>
