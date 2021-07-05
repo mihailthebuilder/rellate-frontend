@@ -30,6 +30,14 @@ section.form {
         margin-top: 1.5em;
         font-size: 1.3em;
         color: $lime-key;
+
+        &::before {
+          border-bottom-color: white;
+        }
+
+        &::after {
+          border-bottom-color: $lime-key;
+        }
       }
     }
   }
