@@ -15,7 +15,7 @@ function QuestionLabel({ questionNumber }: Props) {
       <span className="question-num-indicator">
         {questionNumber}/3 {">"}
       </span>
-      {questions[questionNumber]}
+      {questions[questionNumber - 1]}
     </InputLabel>
   );
 }
