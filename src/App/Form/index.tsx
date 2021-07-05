@@ -11,7 +11,7 @@ const Form: React.FC = () => (
         <InputLabel shrink className="input-label">
           1/3 - Enter your email
         </InputLabel>
-        <Input placeholder="name@example.com" />
+        <Input required placeholder="name@example.com" />
       </FormControl>
     </form>
   </section>
