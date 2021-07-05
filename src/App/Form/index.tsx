@@ -13,6 +13,8 @@ import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
   const [email, setEmail] = useState("");
+  const [influencers] = useState([]);
+
   const [questionWithError, setQuestionWithError] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(1);
   const questions = [
@@ -32,12 +34,23 @@ function Form(): ReactElement {
             </span>
             {questions[questionNumber - 1]}
           </InputLabel>
-          <Input
-            onChange={(event) => setEmail(event.target.value)}
-            required
-            placeholder="name@example.com"
-            onKeyDown={(event) => preventEnterSubmission(event)}
-          />
+          {questionNumber === 1 ? (
+            <Input
+              onChange={(event) => setEmail(event.target.value)}
+              required
+              placeholder="name@example.com"
+              onKeyDown={(event) => preventEnterSubmission(event)}
+            />
+          ) : (
+            questionNumber === 2 && (
+              <div>
+                {influencers.map((influencer) => (
+                  <Input placeholder={influencer} />
+                ))}
+              </div>
+            )
+          )}
+
           {questionWithError === 1 && (
             <FormHelperText className="error-message" error>
               Please enter a valid email address.
