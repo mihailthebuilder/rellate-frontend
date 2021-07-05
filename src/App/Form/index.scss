@@ -18,36 +18,6 @@ section.form {
   form {
     margin-top: 10vh;
 
-    .form-control {
-      width: 40rem;
-
-      .input-label {
-        color: white;
-        font-size: 1.5em;
-        position: relative;
-
-        .question-num-indicator {
-          font-size: 0.6em;
-          position: absolute;
-          left: -3em;
-          top: 0.3em;
-        }
-      }
-
-      .MuiInput-root {
-        font-size: 1.3em;
-        color: $lime-key;
-
-        &::before {
-          border-bottom-color: white;
-        }
-
-        &::after {
-          border-bottom-color: $lime-key;
-        }
-      }
-    }
-
     button {
       color: $yellow-pale;
       display: block;
@@ -62,10 +32,54 @@ section.form {
       }
     }
   }
+
+  .form-control {
+    width: 40rem;
+
+    .input-label {
+      color: white;
+      font-size: 1.5em;
+      position: relative;
+
+      .question-num-indicator {
+        font-size: 0.6em;
+        position: absolute;
+        left: -3em;
+        top: 0.3em;
+      }
+    }
+
+    .MuiInput-root {
+      font-size: 1.3em;
+      color: $lime-key;
+
+      &::before {
+        border-bottom-color: white;
+      }
+
+      &::after {
+        border-bottom-color: $lime-key;
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
   section.form {
     font-size: 1.5rem;
+
+    .form-control {
+      width: 70vw;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  section.form {
+    .form-control {
+      .input-label {
+        font-size: 1em;
+      }
+    }
   }
 }
