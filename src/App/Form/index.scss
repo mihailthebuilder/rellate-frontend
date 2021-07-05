@@ -36,6 +36,21 @@ section.form {
   .form-control {
     width: 40rem;
 
+    .question-label.MuiFormLabel-root {
+      color: white !important;
+      font-size: 1.5em;
+      position: relative;
+      width: 53rem;
+      line-height: 1.2;
+    }
+
+    .question-num-indicator {
+      font-size: 0.6em;
+      position: absolute;
+      left: -3em;
+      top: 0.3em;
+    }
+
     .MuiInput-root {
       font-size: 1.3em;
       color: $lime-key;
@@ -62,6 +77,10 @@ section.form {
 
     .form-control {
       width: 70vw;
+
+      .question-label.MuiFormLabel-root {
+        width: 95vw;
+      }
     }
   }
 }
@@ -75,6 +94,14 @@ section.form {
     h2 {
       text-align: center;
       font-size: 1em;
+    }
+
+    .question-label.MuiFormLabel-root {
+      font-size: 1.5em;
+    }
+
+    .question-num-indicator {
+      top: 0.5em;
     }
 
     form button {

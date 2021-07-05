@@ -1,8 +1,12 @@
 import * as React from "react";
 import { FC, useState } from "react";
-import { FormControl, Input, Button, FormHelperText } from "@material-ui/core";
-
-import QuestionLabel from "./QuestionLabel";
+import {
+  FormControl,
+  Input,
+  Button,
+  FormHelperText,
+  InputLabel,
+} from "@material-ui/core";
 
 import "./index.scss";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
@@ -11,13 +15,23 @@ const Form: FC = () => {
   const [email, setEmail] = useState("");
   const [questionWithError, setQuestionWithError] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(1);
+  const questions = [
+    "Enter your email",
+    "Enter the LinkedIn influencers you wish to follow",
+    "Select the frequency of the newsletter",
+  ];
 
   return (
     <section id="form" className="form">
       <h2>Set up your newsletter in less than a minute</h2>
       <form>
         <FormControl className="form-control">
-          <QuestionLabel questionNumber={questionNumber} />
+          <InputLabel shrink className="question-label">
+            <span className="question-num-indicator">
+              {questionNumber}/3 {">"}
+            </span>
+            {questions[questionNumber - 1]}
+          </InputLabel>
           <Input
             onChange={(event) => setEmail(event.target.value)}
             required
