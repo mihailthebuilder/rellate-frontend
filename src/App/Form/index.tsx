@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FC, useState } from "react";
+import { ReactElement, useState } from "react";
 import {
   FormControl,
   Input,
@@ -11,7 +11,7 @@ import {
 import "./index.scss";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
-const Form: FC = () => {
+function Form(): ReactElement {
   const [email, setEmail] = useState("");
   const [questionWithError, setQuestionWithError] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -70,6 +70,6 @@ const Form: FC = () => {
       </form>
     </section>
   );
-};
+}
 
 export default Form;
