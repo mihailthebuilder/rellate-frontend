@@ -1,6 +1,8 @@
 import { KeyboardEvent } from "react";
 
-const preventEnterSubmission: (event: KeyboardEvent) => boolean = (event) => {
+export const preventEnterSubmission: (event: KeyboardEvent) => boolean = (
+  event
+) => {
   if (event.key === "Enter") {
     event.preventDefault();
     return false;
@@ -8,4 +10,8 @@ const preventEnterSubmission: (event: KeyboardEvent) => boolean = (event) => {
   return true;
 };
 
-export default preventEnterSubmission;
+export const isValidEmail: (email: string) => boolean = (email) => {
+  const re =
+    /^([a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)$/;
+  return re.test(email);
+};
