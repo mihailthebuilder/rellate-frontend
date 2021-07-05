@@ -13,7 +13,15 @@ import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
   const [email, setEmail] = useState("");
-  const [influencers] = useState([]);
+  const [influencers, setInfluencers] = useState(["Rocky Balboa"]);
+
+  const changeInfluencerName: (influencerNum: number, newName: string) => void =
+    (influencerNum, newName) =>
+      setInfluencers((prev) => {
+        const newInfluencers = prev.slice();
+        newInfluencers[influencerNum] = newName;
+        return newInfluencers;
+      });
 
   const [questionWithError, setQuestionWithError] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -45,7 +53,15 @@ function Form(): ReactElement {
             questionNumber === 2 && (
               <div>
                 {influencers.map((influencer) => (
-                  <Input placeholder={influencer} />
+                  <Input
+                    placeholder={influencer}
+                    onChange={(event) =>
+                      changeInfluencerName(
+                        influencers.length - 1,
+                        event.target.value
+                      )
+                    }
+                  />
                 ))}
               </div>
             )
