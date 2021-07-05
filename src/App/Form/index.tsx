@@ -17,7 +17,7 @@ const Form: FC = () => {
   const [questionNumber, setQuestionNumber] = useState(1);
   const questions = [
     "Enter your email",
-    "Enter the LinkedIn influencers you wish to follow",
+    "Add the names of the LinkedIn influencers you wish to follow",
     "Select the frequency of the newsletter",
   ];
 
