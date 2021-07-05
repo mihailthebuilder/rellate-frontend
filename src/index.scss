@@ -3,6 +3,10 @@
   src: local("Rosario"), url(./resources/Rosario-Regular.ttf) format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Rosario;
