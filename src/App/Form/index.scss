@@ -19,11 +19,11 @@ section.form {
     margin-top: 10vh;
 
     button {
-      color: $yellow-pale;
+      color: $green-nyanza;
       display: block;
       margin-top: 5vh;
       font-size: 0.7em;
-      border: 0.05em solid $yellow-pale;
+      border: 0.05em solid $green-nyanza;
       padding: 0.3em 1.5em;
       text-transform: capitalize;
 
@@ -65,7 +65,7 @@ section.form {
     }
 
     .error-message {
-      color: #fed766;
+      color: $yellow-crayola;
       font-size: 0.7em;
     }
   }
