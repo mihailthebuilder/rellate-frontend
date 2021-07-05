@@ -8,7 +8,11 @@ interface Props {
 }
 
 function QuestionLabel({ questionNumber }: Props) {
-  const questions = ["Enter your email", "Enter"];
+  const questions = [
+    "Enter your email",
+    "Enter the LinkedIn influencers you wish to follow",
+    "Select the frequency of the newsletter",
+  ];
 
   return (
     <InputLabel shrink className="question-label">
