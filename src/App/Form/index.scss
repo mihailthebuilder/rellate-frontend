@@ -36,7 +36,7 @@ section.form {
   .form-control {
     width: 40rem;
 
-    .question-label.MuiFormLabel-root {
+    .question-label {
       color: white !important;
       font-size: 1.5em;
       position: relative;
@@ -78,7 +78,7 @@ section.form {
     .form-control {
       width: 70vw;
 
-      .question-label.MuiFormLabel-root {
+      .question-label {
         width: 95vw;
       }
     }
@@ -96,7 +96,7 @@ section.form {
       font-size: 1em;
     }
 
-    .question-label.MuiFormLabel-root {
+    .question-label {
       font-size: 1.5em;
     }
 
