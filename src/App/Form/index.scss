@@ -1,1 +1,11 @@
 @import "../../resources/variables.scss";
+
+section.form {
+  background: $green-shamrock;
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
