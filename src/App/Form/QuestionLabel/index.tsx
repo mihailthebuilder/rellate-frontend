@@ -11,7 +11,7 @@ function QuestionLabel({ questionNumber }: Props) {
   const questions = ["Enter your email", "Enter"];
 
   return (
-    <InputLabel shrink className="input-label">
+    <InputLabel shrink className="question-label">
       <span className="question-num-indicator">
         {questionNumber}/3 {">"}
       </span>
