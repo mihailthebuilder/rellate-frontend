@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FC, useState } from "react";
-import { FormControl, InputLabel, Input } from "@material-ui/core";
+import { FormControl, InputLabel, Input, Button } from "@material-ui/core";
 
 import "./index.scss";
 import preventEnterSubmission from "../../resources/helpers";
@@ -24,6 +24,7 @@ const Form: FC = () => {
             onKeyDown={(event) => preventEnterSubmission(event)}
           />
         </FormControl>
+        <Button type="button">Next</Button>
       </form>
     </section>
   );

@@ -40,5 +40,15 @@ section.form {
         }
       }
     }
+
+    button {
+      color: $yellow-pale;
+      display: block;
+      margin-top: 3vw;
+      font-size: 0.7em;
+      border: 0.05em solid $yellow-pale;
+      padding: 0.3em 1.5em;
+      text-transform: capitalize;
+    }
   }
 }
