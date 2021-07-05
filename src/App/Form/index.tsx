@@ -1,6 +1,8 @@
 import * as React from "react";
 import { FC, useState } from "react";
-import { FormControl, InputLabel, Input, Button } from "@material-ui/core";
+import { FormControl, Input, Button } from "@material-ui/core";
+
+import QuestionLabel from "./QuestionLabel";
 
 import "./index.scss";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
@@ -15,12 +17,7 @@ const Form: FC = () => {
       <h2>Set up your newsletter in less than a minute</h2>
       <form>
         <FormControl className="form-control">
-          <InputLabel shrink className="input-label">
-            <span className="question-num-indicator">
-              {questionNumber}/3 {">"}
-            </span>
-            Enter your email
-          </InputLabel>
+          <QuestionLabel questionNumber={questionNumber} />
           <Input
             onChange={(event) => setEmail(event.target.value)}
             required
