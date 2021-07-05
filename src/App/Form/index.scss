@@ -15,18 +15,22 @@ section.form {
     font-weight: 500;
   }
 
-  .form-control {
-    width: 30rem;
-    margin-top: 3em;
+  form {
+    margin-top: 8vw;
 
-    .input-label {
-      color: white;
-      font-size: 1.5em;
-    }
+    .form-control {
+      width: 40rem;
 
-    input {
-      margin-top: 2em;
-      font-size: 1.5em;
+      .input-label {
+        color: white;
+        font-size: 1.5em;
+      }
+
+      .MuiInput-root {
+        margin-top: 1.5em;
+        font-size: 1.3em;
+        color: $lime-key;
+      }
     }
   }
 }
