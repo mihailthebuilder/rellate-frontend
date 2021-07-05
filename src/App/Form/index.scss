@@ -48,6 +48,11 @@ section.form {
         border-bottom-color: $lime-key;
       }
     }
+
+    .error-message {
+      color: #fed766;
+      font-size: 0.7em;
+    }
   }
 }
 

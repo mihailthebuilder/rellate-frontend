@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FC, useState } from "react";
-import { FormControl, Input, Button } from "@material-ui/core";
+import { FormControl, Input, Button, FormHelperText } from "@material-ui/core";
 
 import QuestionLabel from "./QuestionLabel";
 
@@ -24,7 +24,11 @@ const Form: FC = () => {
             placeholder="name@example.com"
             onKeyDown={(event) => preventEnterSubmission(event)}
           />
-          {questionWithError === 1 && <div>Please enter a valid email</div>}
+          {questionWithError === 1 && (
+            <FormHelperText className="error-message" error>
+              Please enter a valid email address.
+            </FormHelperText>
+          )}
         </FormControl>
         {questionNumber > 1 && (
           <Button
