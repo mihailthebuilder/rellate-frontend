@@ -30,14 +30,6 @@ const Form: FC = () => {
             </FormHelperText>
           )}
         </FormControl>
-        {questionNumber > 1 && (
-          <Button
-            type="button"
-            onClick={() => setQuestionNumber((prev) => prev - 1)}
-          >
-            Back
-          </Button>
-        )}
         {email !== "" && questionNumber < 3 && (
           <Button
             type="button"
@@ -51,6 +43,14 @@ const Form: FC = () => {
             }}
           >
             Next
+          </Button>
+        )}
+        {questionNumber > 1 && (
+          <Button
+            type="button"
+            onClick={() => setQuestionNumber((prev) => prev - 1)}
+          >
+            Back
           </Button>
         )}
       </form>
