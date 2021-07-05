@@ -8,7 +8,7 @@ section.form {
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 15vh;
+  padding: 15vh 0;
 
   h2 {
     font-size: 1em;
@@ -61,5 +61,11 @@ section.form {
         background: $green-hunter;
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  section.form {
+    font-size: 1.5rem;
   }
 }
