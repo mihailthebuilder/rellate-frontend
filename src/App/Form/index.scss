@@ -9,4 +9,23 @@ section.form {
   align-items: center;
   color: white;
   padding: 8vw;
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  .form-control {
+    width: 30rem;
+    margin-top: 3em;
+
+    .input-label {
+      color: white;
+      font-size: 1.5em;
+    }
+
+    input {
+      margin-top: 3em;
+    }
+  }
 }
