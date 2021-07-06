@@ -3,6 +3,8 @@ import { ReactElement } from "react";
 
 import { InputLabel, FormHelperText } from "@material-ui/core";
 
+import { QNIndicator } from "./style";
+
 type Props = {
   questionNumber: number;
 };
@@ -16,9 +18,9 @@ function QuestionLabel({ questionNumber }: Props): ReactElement {
 
   return (
     <InputLabel shrink className="question-label">
-      <span className="question-num-indicator">
+      <QNIndicator>
         {questionNumber}/3 {">"}
-      </span>
+      </QNIndicator>
       {questions[questionNumber - 1]}
       {questionNumber === 2 && (
         <FormHelperText>
