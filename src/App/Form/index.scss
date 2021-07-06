@@ -36,19 +36,6 @@ section.form {
   .form-control {
     width: 40rem;
 
-    .MuiInput-root {
-      font-size: 1.3em;
-      color: $lime-key;
-
-      &::before {
-        border-bottom-color: white;
-      }
-
-      &::after {
-        border-bottom-color: $lime-key;
-      }
-    }
-
     .error-message {
       color: $yellow-crayola;
       font-size: 0.7em;
