@@ -7,6 +7,7 @@ const { lime } = yellow;
 const IStyled = styled(Input)`
   font-size: 1.3em;
   color: ${lime};
+  width: 100%;
 
   &::before {
     border-bottom-color: white !important;
