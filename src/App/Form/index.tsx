@@ -1,10 +1,11 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
-import { FormControl, Input, Button, FormHelperText } from "@material-ui/core";
+import { FormControl, Button, FormHelperText } from "@material-ui/core";
 
 import "./index.scss";
 
 import QuestionLabel from "./QuestionLabel";
+import IStyled from "./style";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
@@ -29,7 +30,7 @@ function Form(): ReactElement {
         <FormControl className="form-control">
           <QuestionLabel questionNumber={questionNumber} />
           {questionNumber === 1 ? (
-            <Input
+            <IStyled
               onChange={(event) => setEmail(event.target.value)}
               required
               placeholder="name@example.com"
@@ -39,7 +40,7 @@ function Form(): ReactElement {
             questionNumber === 2 && (
               <div className="influencer-answer-container">
                 {influencers.map((influencer) => (
-                  <Input
+                  <IStyled
                     placeholder={influencer}
                     onChange={(event) =>
                       changeInfluencerName(
