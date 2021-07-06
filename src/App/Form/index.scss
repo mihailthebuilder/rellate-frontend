@@ -36,14 +36,6 @@ section.form {
   .form-control {
     width: 40rem;
 
-    .question-label {
-      color: white !important;
-      font-size: 1.5em;
-      position: relative;
-      width: 53rem;
-      line-height: 1.2;
-    }
-
     .MuiInput-root {
       font-size: 1.3em;
       color: $lime-key;
@@ -76,10 +68,6 @@ section.form {
 
     .form-control {
       width: 70vw;
-
-      .question-label {
-        width: 95vw;
-      }
     }
   }
 }
@@ -93,10 +81,6 @@ section.form {
     h2 {
       text-align: center;
       font-size: 1em;
-    }
-
-    .question-label {
-      font-size: 1.5em;
     }
 
     form button {

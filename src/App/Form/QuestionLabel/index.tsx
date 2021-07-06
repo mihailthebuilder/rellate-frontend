@@ -1,9 +1,9 @@
 import * as React from "react";
 import { ReactElement } from "react";
 
-import { InputLabel, FormHelperText } from "@material-ui/core";
+import { FormHelperText } from "@material-ui/core";
 
-import { QNIndicator } from "./style";
+import { Layout, QNIndicator } from "./style";
 
 type Props = {
   questionNumber: number;
@@ -17,7 +17,7 @@ function QuestionLabel({ questionNumber }: Props): ReactElement {
   ];
 
   return (
-    <InputLabel shrink className="question-label">
+    <Layout shrink>
       <QNIndicator>
         {questionNumber}/3 {">"}
       </QNIndicator>
@@ -28,7 +28,7 @@ function QuestionLabel({ questionNumber }: Props): ReactElement {
           many.
         </FormHelperText>
       )}
-    </InputLabel>
+    </Layout>
   );
 }
 export default QuestionLabel;
