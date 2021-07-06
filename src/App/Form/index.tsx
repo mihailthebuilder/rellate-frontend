@@ -1,14 +1,10 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
-import {
-  FormControl,
-  Input,
-  Button,
-  FormHelperText,
-  InputLabel,
-} from "@material-ui/core";
+import { FormControl, Input, Button, FormHelperText } from "@material-ui/core";
 
 import "./index.scss";
+
+import QuestionLabel from "./QuestionLabel";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
@@ -25,29 +21,13 @@ function Form(): ReactElement {
 
   const [questionWithError, setQuestionWithError] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(1);
-  const questions = [
-    "Enter your email",
-    "Add the names of the LinkedIn influencers you wish to follow",
-    "Select the frequency of the newsletter",
-  ];
 
   return (
     <section id="form" className="form">
       <h2>Set up your newsletter in less than a minute</h2>
       <form>
         <FormControl className="form-control">
-          <InputLabel shrink className="question-label">
-            <span className="question-num-indicator">
-              {questionNumber}/3 {">"}
-            </span>
-            {questions[questionNumber - 1]}
-            {questionNumber === 2 && (
-              <FormHelperText>
-                You can leave the input field empty if you accidentally added
-                too many.
-              </FormHelperText>
-            )}
-          </InputLabel>
+          <QuestionLabel questionNumber={questionNumber} />
           {questionNumber === 1 ? (
             <Input
               onChange={(event) => setEmail(event.target.value)}
