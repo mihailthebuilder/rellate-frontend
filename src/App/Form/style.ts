@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Input } from "@material-ui/core";
+import { FormHelperText, Input } from "@material-ui/core";
 import { yellow } from "../../resources/style";
 
-const { lime } = yellow;
+const { lime, crayola } = yellow;
 
-const IStyled = styled(Input)`
+export const IStyled = styled(Input)`
   font-size: 1.3em;
   color: ${lime};
   width: 100%;
@@ -18,4 +18,7 @@ const IStyled = styled(Input)`
   }
 `;
 
-export default IStyled;
+export const EMessage = styled(FormHelperText)`
+  color: ${crayola};
+  font-size: 0.7em;
+`;

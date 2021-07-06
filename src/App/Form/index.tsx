@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
-import { FormControl, Button, FormHelperText } from "@material-ui/core";
+import { FormControl, Button } from "@material-ui/core";
 
 import "./index.scss";
 
 import QuestionLabel from "./QuestionLabel";
-import IStyled from "./style";
+import { IStyled, EMessage } from "./style";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
@@ -55,9 +55,7 @@ function Form(): ReactElement {
           )}
 
           {questionWithError === 1 && (
-            <FormHelperText className="error-message" error>
-              Please enter a valid email address.
-            </FormHelperText>
+            <EMessage error>Please enter a valid email address.</EMessage>
           )}
         </FormControl>
         {email !== "" && questionNumber < 3 && (
