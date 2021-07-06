@@ -10,7 +10,7 @@ import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
   const [email, setEmail] = useState("");
-  const [influencers, setInfluencers] = useState(["Rocky Balboa"]);
+  const [influencers, setInfluencers] = useState([""]);
 
   const changeInfluencerName: (influencerNum: number, newName: string) => void =
     (influencerNum, newName) =>
@@ -41,7 +41,8 @@ function Form(): ReactElement {
               <div className="influencer-answer-container">
                 {influencers.map((influencer) => (
                   <IStyled
-                    placeholder={influencer}
+                    placeholder="Rocky Balboa"
+                    value={influencer}
                     onChange={(event) =>
                       changeInfluencerName(
                         influencers.length - 1,
