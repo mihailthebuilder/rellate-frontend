@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FormHelperText, Input } from "@material-ui/core";
+import { FormHelperText, Input, FormControl } from "@material-ui/core";
 import { yellow } from "../../resources/style";
 
 const { lime, crayola } = yellow;
@@ -21,4 +21,14 @@ export const IStyled = styled(Input)`
 export const EMessage = styled(FormHelperText)`
   color: ${crayola};
   font-size: 0.7em;
+`;
+
+export const QContainer = styled(FormControl)`
+  width: 40rem;
+
+  @media (max-width: 900px) {
+    .form-control {
+      width: 70vw;
+    }
+  }
 `;

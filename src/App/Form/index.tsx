@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
-import { FormControl, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 import "./index.scss";
 
 import QuestionLabel from "./QuestionLabel";
-import { IStyled, EMessage } from "./style";
+import { IStyled, EMessage, QContainer } from "./style";
 import { preventEnterSubmission, isValidEmail } from "../../resources/helpers";
 
 function Form(): ReactElement {
@@ -27,7 +27,7 @@ function Form(): ReactElement {
     <section id="form" className="form">
       <h2>Set up your newsletter in less than a minute</h2>
       <form>
-        <FormControl className="form-control">
+        <QContainer>
           <QuestionLabel questionNumber={questionNumber} />
           {questionNumber === 1 ? (
             <IStyled
@@ -58,7 +58,7 @@ function Form(): ReactElement {
           {questionWithError === 1 && (
             <EMessage error>Please enter a valid email address.</EMessage>
           )}
-        </FormControl>
+        </QContainer>
         {email !== "" && questionNumber < 3 && (
           <Button
             type="button"

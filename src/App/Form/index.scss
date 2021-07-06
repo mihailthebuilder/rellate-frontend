@@ -32,19 +32,11 @@ section.form {
       }
     }
   }
-
-  .form-control {
-    width: 40rem;
-  }
 }
 
 @media (max-width: 900px) {
   section.form {
     font-size: 1.5rem;
-
-    .form-control {
-      width: 70vw;
-    }
   }
 }
 
